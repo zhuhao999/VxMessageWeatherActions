@@ -15,9 +15,9 @@ import java.util.List;
  *               -- 2022/10/1
  */
 public class AllConfig {
-    public static final String VxAppId = "微信的APPID";
-    public static final String VxAppSecret = "微信的密钥";
-    public static final String WeatherKey = "高德地图key";
+    public static final String VxAppId = "wx7658985505151cfa";
+    public static final String VxAppSecret = "5cdc726d122feeb7e318634f2af629cb";
+    public static final String WeatherKey = "baf81a14e60bfbbf24b78af22e817783";
 
 
     //下列所有填写的  true 为开启， false 为不开启 ，#XXXXXX是颜色16进制HEX码（不知道颜色16进制HEX码可以百度）
@@ -64,12 +64,12 @@ public class AllConfig {
         //如果开启了master模式，除第一个用户外，其他用户只需要填写微信号
         //要计算几个日期，就写几个new BirthDay,第一个在模板中是{{birthDay.DATA}}，第二个是{{birthDay1.DATA}}，第三个是{{birthDay2.DATA}}以此类推
         userList.add(getUser(
-                "这个人的微信号",//扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "模板ID",//要给这个人发送的模板ID
-                "pt",//咋称呼这个人
-                "江苏省南京市玄武区",//这个人的详细地址
-                "南京",//这个人在的城市
-                new BirthDay(1999,2,15,true,false),//分别代表年、月、日、是否是农历(true为农历、false为公历)、是否统计天数(true为统计，false为倒计时)
+                "o9ttj6kyaO3fAuEKQYRjgckyCByg",//扫码关注你的测试号以后，测试平台会出现TA的微信号
+                "	{{userName.DATA}}， {{date.DATA}} 周{{week.DATA}} 今天是我们在一起的{{birdyDay3.DATA}}天 你的生日还有{{birdyDay.DATA}}天 我的生日还有{{birdyDay1.DATA}}天 距离我们下一次纪念还有{{birdyDay2.DATA}}天 今天白天{{weatherDay.DATA}}，温度{{temperatureDay.DATA}}℃ 今天晚上{{weatherNight.DATA}}，温度{{temperatureNight.DATA}}℃ 明天白天{{weatherDay1.DATA}}，温度{{temperatureDay1.DATA}}℃ 明天晚上{{weatherNight1.DATA}}，温度{{temperatureNight1.DATA}}℃ {{otherInfo.DATA}} {{randomInfo.DATA}}{{randomInfo1.DATA}} 最后，开心每一天！",//要给这个人发送的模板ID
+                "小乖乖",//咋称呼这个人
+                "武汉市江夏区",//这个人的详细地址
+                "武汉",//这个人在的城市
+                new BirthDay(2004,1,24,true),//分别代表年、月、日、是否是农历(true为农历、false为公历)、是否统计天数(true为统计，false为倒计时)
                 new BirthDay(1999,8,11,false,false),
                 new BirthDay(2020,7,8,true,true),
                 new BirthDay(2020,7,8,true,false)
